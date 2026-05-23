@@ -1,0 +1,233 @@
+@import url('./loader.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+}
+
+.top_menu {
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 1, 27);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.top_menur {
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  color: rgb(255, 157, 0);
+}
+
+.top_menul {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top_menul > a {
+  all: unset;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.top_menul > a:hover {
+  transition: all 0.5s ease-in-out;
+  color: rgb(255, 157, 0);
+  font-weight: 900;
+}
+
+.main_body {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(58, 2, 53);
+  min-height: 80dvh;
+  gap: 4rem;
+}
+
+.url_input_section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.url_input_section > input {
+  all: unset;
+  padding: 20px;
+  min-width: 300px;
+  border-radius: 2rem;
+  background-color: rgb(37, 1, 69);
+  color: rgb(255, 255, 255);
+}
+
+.url_input_section > input::placeholder {
+  color: rgb(156, 156, 156);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.url_input_section > p {
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-align: center;
+}
+
+.url_input_section > button {
+    all: unset;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(92, 57, 0);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.url_input_section > button:disabled {
+    opacity: 0.3;
+}
+
+.url_input_section > button:hover {
+    background-color: rgb(31, 1, 27);
+}
+
+.qualities_listed {
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 1, 27);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col > button {
+    all: unset;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    color: rgb(255, 157, 0);
+}
+
+.col > button:hover {
+    color: rgb(0, 17, 255);
+}
+
+.vertical_line {
+    width: 100%;
+    min-height: 2px;
+    max-height: 2px;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    background-color: rgb(31, 1, 27);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.download_options {
+    display: none;
+    margin-bottom: 3rem;
+}
+
+video {
+    width: 350px;
+    height: 250px;
+}
+
+.main_video_container {
+    display: none;
+}
+
+.video_qualities {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.video_qualities > button {
+    all: unset;
+    color: rgb(19, 19, 19);
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(255, 157, 0);
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 2rem;
+    min-width: 80px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.currently_playing_button {
+    background-color: rgb(92, 57, 0) !important;
+}
+
+.video_qualities > button:hover {
+    background-color: rgb(92, 57, 0);
+}
+
+.footer_foot {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (width >= 1024px) {
+  .top_menur {
+    font-size: 1.7rem;
+  }
+  .top_menul {
+    font-size: 1.2rem;
+  }
+  .url_input_section > input {
+    min-width: 800px;
+  }
+  .url_input_section > p {
+    font-size: 3rem;
+  }
+  .qualities_listed {
+    min-width: 800px;
+    font-size: 1.2rem;
+  }
+  .footer {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  video {
+    width: 800px;
+    height: 500px;
+  }
+}
