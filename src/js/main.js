@@ -13,7 +13,7 @@ const allAvailableSites = [
 ];
 const urlInputForm = document.getElementById("requested_url");
 const urlSubmitButton = document.getElementById("download_button");
-const apiUrl = "http://192.168.8.11:5000/";
+const apiUrl = "https://pphub22569.onrender.com/";
 let prevUrl = "";
 const player = document.getElementById("video_player");
 
